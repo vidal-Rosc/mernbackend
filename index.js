@@ -27,7 +27,7 @@ server.use( cors(corsOptions) );
 server.use(express.json({ extended: true }));
 
 //Asignamos un puerto
-const port = process.env.PORT || 5000;
+const port = process.env.port || 5000;
 
 //Importamos las rutas
 server.use('/api/users', require('./routes/users'));
